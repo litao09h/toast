@@ -232,7 +232,7 @@ class CaseController extends Controller
             'status' => 'faliure',
             'info' => ''
          );
-        $code = file_get_contents(str_replace('//', '//ads:dsa543@', $url));
+        $code = file_get_contents(str_replace('//', '//', $url));
         if(!empty($code))
         {
             $res['status'] = 'success';

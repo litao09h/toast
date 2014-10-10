@@ -48,8 +48,8 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = 'http://toast.corp.taobao.com/themes/1.0/assets/images/loading.gif';
-      this.fileCloseImage = 'http://toast.corp.taobao.com/themes/1.0/assets/images/close.png';
+      this.fileLoadingImage = 'http://toast/themes/1.0/assets/images/loading.gif';
+      this.fileCloseImage = 'http://toast/themes/1.0/assets/images/close.png';
       this.resizeDuration = 700;
       this.fadeDuration = 500;
       this.labelImage = "Image";

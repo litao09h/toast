@@ -39,7 +39,6 @@ int WebInterfaces::SetAllRunToComplete()
 }
 
 
-// curl_url = http://v132194.sqa.cm4.tbsite.net/toast/api/runtaskbyid?id=TASKID&autorun=1&user=TOAST&desc=DESC
 void WebInterfaces::StartTimerTask(int task_id)
 {
     string url = g_config->root_url + g_config->run_timer_task_url;
@@ -53,7 +52,6 @@ void WebInterfaces::StartTimerTask(int task_id)
     }
 }
 
-// http://toast.corp.taobao.com/job/getallruntime 
 // return timer task number
 //  {"1":"0 0 * * *","22":"0 1 * * *"}
 int WebInterfaces::GetTimerTaskList()
@@ -104,7 +102,6 @@ int WebInterfaces::GetTimerTaskList()
     return timer_task_counter;
 }
 
-// http://toast.corp.taobao.com/machine/updatemachine
 // name 机器名
 // status 机器状态：0 idle; 1 running; 2 down
 void WebInterfaces::UpdateMachineStatus(const string &name, int status)
@@ -124,7 +121,6 @@ void WebInterfaces::UpdateMachineStatus(const string &name, int status)
     }
 }
 
-// http://toast.corp.taobao.com/machine/updatemachine
 /*
 status 机器状态：0 idle; 1 running; 2 down
 version Agent版本号
@@ -161,7 +157,6 @@ void WebInterfaces::UpdateMachineInfoStatusIdle(const AgentSystemInfo &info, con
         Log::Info("Update Machine %s information successfully!\t", info.hostname.c_str());
     }
 }
-// http://toast.corp.taobao.com/run/updaterun
 //id 运行命令ID
 // status 运行状态：0 waitting; 1 running; 2 complete; 3 canceled; 4 timeout; 5 abort; 10 canceling
 // return_value命令返回值

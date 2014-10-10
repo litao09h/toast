@@ -15,7 +15,7 @@ struct SystemConfig
 {
 std::string monitor_path;
 std::string rrd_path;
-std::string curl_url;       // = http://v132194.sqa.cm4.tbsite.net/toast/api/runtaskbyid?id=TASKID&build=BUILD&user=TOAST&desc=DESC
+std::string curl_url;       
 int    num_response_process_threads;
 //int    db_port;
 std::string log_path;

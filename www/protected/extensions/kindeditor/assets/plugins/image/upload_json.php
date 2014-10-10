@@ -3,7 +3,7 @@
 $save_path = '../../../../upload/userfiles/';
 //文件保存目录URL
 //TODO 取BaseUrl
-$save_url = 'http://toast.corp.taobao.com/upload/userfiles/';
+$save_url = 'http://xxx';
 //定义允许上传的文件扩展名
 $ext_arr = array('gif', 'jpg', 'jpeg', 'png', 'bmp');
 //最大文件大小

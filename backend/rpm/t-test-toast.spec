@@ -3,7 +3,6 @@ Version: 1.0.0
 Release: %(echo $RELEASE)%{?dist}
 
 Summary: toast agent
-URL: http://svn.simba.taobao.com/svn/QA/automation/trunk/toast/newengine/
 Group: taobao/test
 License: Commercial
 

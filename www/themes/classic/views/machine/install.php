@@ -44,7 +44,7 @@
                         </div>
                         <div style="padding: 10px; background: #CFCFCF; margin-bottom: 20px;">
                         <?php
-                        echo 'wget <a href="http://toast.corp.taobao.com/machine/getInstallScript/id/' . $machine->id . '" target="_blank">http://toast.corp.taobao.com/machine/getInstallScript/id/' . $machine->id . '</a>  -O ./toast.py<br/>'
+                        echo 'wget <a href="http://toast/machine/getInstallScript/id/' . $machine->id . '" target="_blank">http://toast/machine/getInstallScript/id/' . $machine->id . '</a>  -O ./toast.py<br/>'
                         .'sudo python ./toast.py';
                         ?>
                         </div>

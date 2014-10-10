@@ -16,12 +16,10 @@ class WebInterfaces
 public:
    static int SetAllAgentToDown();
     static int SetAllRunToComplete();
-    // http://toast.corp.taobao.com/job/getallruntime 
     // return timer task number
     //  {"1":"0 0 * * *","22":"0 1 * * *"}
     static int GetTimerTaskList();
  
-       // http://toast.corp.taobao.com/machine/updatemachine
     // name 机器名
     // status 机器状态：0 idle; 1 running; 2 down
     // version Agent版本号
@@ -32,7 +30,6 @@ public:
 
     static void UpdateMachineInfoStatusIdle(const AgentSystemInfo& info, const std::string &other_info);
     
-    // http://toast.corp.taobao.com/run/updaterun
     //id 运行命令ID
     // status 运行状态：0 waitting; 1 running; 2 complete; 3 canceled; 4 timeout; 5 abort; 10 canceling
     // return_value命令返回值
