@@ -267,6 +267,7 @@ class Task extends Model
                 '{current_time}' => date('Y-m-d H:i:s')
             ));
             $taskRun->task_id = $this->id;
+            $taskRun->build = $params;
             $taskRun->report_to = $this->report_to;
             $taskRun->status = CommandRun::STATUS_WAITING;
             $taskRun->result = CommandRun::RESULT_NULL;
